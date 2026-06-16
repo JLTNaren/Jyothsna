@@ -6253,6 +6253,104 @@ body,
   }
 }
 
+/* Technology page header image enlargement */
+.technology-hero .lfp-hero-visual {
+  width: min(100%, 760px) !important;
+  max-width: 760px !important;
+  margin-left: auto !important;
+}
+
+.technology-hero .lfp-hero-visual img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 460px !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 900px) {
+  .technology-hero .lfp-hero-visual {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .technology-hero .lfp-hero-visual img {
+    max-height: 360px !important;
+  }
+}
+
+/* Technology page final lightning header image */
+.technology-hero .lfp-hero-visual {
+  width: min(100%, 860px) !important;
+  max-width: 860px !important;
+  overflow: hidden !important;
+  border-radius: 26px !important;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.18) !important;
+}
+
+.technology-hero .lfp-hero-visual img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 520px !important;
+  object-fit: contain !important;
+  border-radius: 26px !important;
+  display: block !important;
+}
+
+@media (max-width: 900px) {
+  .technology-hero .lfp-hero-visual {
+    border-radius: 20px !important;
+  }
+
+  .technology-hero .lfp-hero-visual img {
+    max-height: 390px !important;
+    border-radius: 20px !important;
+  }
+}
+
+/* Technology hero image: remove patch and fill visual area */
+.technology-hero .technology-hero-wrap {
+  grid-template-columns: minmax(0, 0.82fr) minmax(520px, 1.18fr) !important;
+  gap: clamp(24px, 3vw, 54px) !important;
+  align-items: center !important;
+}
+
+.technology-hero .lfp-hero-visual {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
+}
+
+.technology-hero .lfp-hero-visual img {
+  width: 100% !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  border-radius: 26px !important;
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.18) !important;
+}
+
+@media (max-width: 980px) {
+  .technology-hero .technology-hero-wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+  .technology-hero .lfp-hero-visual img {
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    border-radius: 20px !important;
+  }
+}
+
 /* Final alignment polish 2026-06-03 */
 .jlt-nav a,
 .nav a,
@@ -9106,5 +9204,64 @@ body:not(.investor-content-home) .section {
 
   .investor-content-home .jlt-body {
     font-size: 12px !important;
+  }
+}
+
+/* Absolute final Technology header image: no patch, full image, larger */
+.technology-hero .technology-hero-wrap {
+  grid-template-columns: minmax(0, 0.82fr) minmax(465px, 1.04fr) !important;
+  gap: clamp(20px, 2.6vw, 46px) !important;
+  align-items: center !important;
+}
+
+.technology-hero .lfp-hero-visual,
+.technology-hero figure.lfp-hero-visual {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
+}
+
+.technology-hero .lfp-hero-visual::before,
+.technology-hero .lfp-hero-visual::after {
+  display: none !important;
+  content: none !important;
+}
+
+.technology-hero .lfp-hero-visual img {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  border-radius: 26px !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+@media (max-width: 1100px) {
+  .technology-hero .technology-hero-wrap {
+    grid-template-columns: minmax(0, 0.9fr) minmax(375px, 1fr) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .technology-hero .technology-hero-wrap {
+    grid-template-columns: 1fr !important;
+  }
+
+  .technology-hero .lfp-hero-visual img {
+    width: 100% !important;
+    border-radius: 20px !important;
   }
 }
