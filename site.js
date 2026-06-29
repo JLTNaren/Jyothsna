@@ -62,3 +62,7 @@ if ("IntersectionObserver" in window && revealItems.length) {
 
   revealItems.forEach((item) => revealObserver.observe(item));
 }
+
+
+
+
