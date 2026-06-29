@@ -749,12 +749,12 @@ h2 {
 .capabilities-split img {
   object-position: center;
 }
-.pilot-photo-pair {
+.production-photo-pair {
   display: grid;
   gap: 12px;
   max-width: 520px;
 }
-.pilot-photo-pair img {
+.production-photo-pair img {
   width: 100%;
   height: 135px;
   object-fit: cover;
